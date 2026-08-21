@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tot Bloei | Opvoed- &amp; kindercoaching in Friesland</title>
+<meta name="description" content="Tot Bloei biedt opvoedcoaching en kindercoaching in Friesland voor ouders en kinderen van 2 tot 12 jaar. Warm, praktisch en zonder oordeel. Plan een vrijblijvende kennismaking.">
+<meta name="theme-color" content="#FBF8F3">
+<link rel="canonical" href="https://www.totbloeicoaching.nl/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:title" content="Tot Bloei | Opvoed- &amp; kindercoaching">
+<meta property="og:description" content="Ruimte voor groei, rust en verbinding. Opvoed- en kindercoaching voor ouders en kinderen van 2 tot 12 jaar.">
+<meta property="og:url" content="https://www.totbloeicoaching.nl/">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23FBF8F3'/%3E%3Cpath d='M16 25V12' stroke='%2356705A' stroke-width='1.6' stroke-linecap='round'/%3E%3Cpath d='M16 17c-4 0-6-2-6-5 3 0 6 1.6 6 5Z' fill='%239BB19A'/%3E%3Cpath d='M16 14c0-3.2 2.2-5 5-5 0 3.2-2 5-5 5Z' fill='%23C9D6C4'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..700,0..100&family=Figtree:wght@300..700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Tot Bloei – Opvoed- & kindercoaching",
+  "description": "Opvoedcoaching en kindercoaching voor ouders en kinderen van 2 tot 12 jaar. Begeleiding bij emoties, gedrag, overprikkeling, zelfvertrouwen en opvoedvragen.",
+  "url": "https://www.totbloeicoaching.nl/",
+  "email": "hallo@totbloeicoaching.nl",
+  "image": "https://www.totbloeicoaching.nl/og-tot-bloei.jpg",
+  "founder": { "@type": "Person", "name": "Marieke" },
+  "address": { "@type": "PostalAddress", "addressRegion": "Friesland", "addressCountry": "NL" },
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "Friesland" },
+    { "@type": "AdministrativeArea", "name": "Noordoost-Friesland" }
+  ],
+  "sameAs": ["https://www.instagram.com/totbloeicoaching"],
+  "knowsAbout": ["opvoedcoaching", "kindercoaching", "opvoedondersteuning", "oudercoaching"],
+  "priceRange": "€€"
+}
+</script>
+
+<style>
+/* ============================================================
+   TOT BLOEI — design tokens
+   Palet: crème/ivoor basis, saliegroen accent, vergrijsd olijf,
+   oudroze, zand/perzik, donker grijsgroen voor tekst.
+   ============================================================ */
+:root{
+  --cream:#FBF8F3;
+  --cream-2:#F5EFE5;
+  --sand:#EFE2D2;
+  --peach:#F3DCC8;
+  --blush:#E7CBC6;
+  --sage:#9FB79C;
+  --sage-soft:#CEDCC9;
+  --sage-wash:#E7EEE3;
+  --sage-deep:#4F6B55;
+  --olive:#6F7F65;
+  --ink:#2C382F;
+  --ink-soft:#55655A;
+
+  --radius-s:14px;
+  --radius-m:22px;
+  --radius-l:34px;
+
+  --shadow-s:0 2px 10px rgba(44,56,47,.045);
+  --shadow-m:0 14px 34px -18px rgba(44,56,47,.22);
+  --shadow-l:0 30px 70px -34px rgba(44,56,47,.32);
+
+  --pad:clamp(20px,5vw,48px);
+  --maxw:1180px;
+  --section:clamp(76px,10vw,148px);
+
+  --display:"Fraunces","Iowan Old Style",Georgia,"Times New Roman",serif;
+  --body:"Figtree","Segoe UI",system-ui,-apple-system,sans-serif;
+
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+html:focus-within{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--cream);
+  color:var(--ink-soft);
+  font-family:var(--body);
+  font-size:clamp(16.5px,.4vw + 15.6px,18px);
+  line-height:1.75;
+  font-weight:400;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+/* zachte lichtvlekken in de achtergrond — nooit hard contrast */
+body::before{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(58vw 46vw at 82% -6%, rgba(243,220,200,.55), transparent 62%),
+    radial-gradient(52vw 42vw at 4% 32%, rgba(231,238,227,.75), transparent 60%),
+    radial-gradient(46vw 38vw at 96% 78%, rgba(231,203,198,.32), transparent 64%);
+}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+
+h1,h2,h3,h4,blockquote{
+  font-family:var(--display);
+  font-variation-settings:"SOFT" 45,"opsz" 110;
+  color:var(--ink);
+  font-weight:400;
+  line-height:1.14;
+  letter-spacing:-.012em;
+  margin:0;
+  text-wrap:balance;
+}
+h1{font-size:clamp(2.6rem,6.2vw,4.4rem);line-height:1.06;letter-spacing:-.022em}
+h2{font-size:clamp(2rem,3.9vw,3.1rem)}
+h3{font-size:clamp(1.18rem,1.5vw,1.35rem);line-height:1.28;font-variation-settings:"SOFT" 35,"opsz" 30}
+p{margin:0 0 1.15em}
+p:last-child{margin-bottom:0}
+
+.wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:var(--pad)}
+.section{padding-block:var(--section);position:relative}
+.lede{font-size:clamp(1.08rem,1.3vw,1.22rem);line-height:1.72;color:var(--ink-soft)}
+.measure{max-width:62ch}
+
+.eyebrow{
+  font-family:var(--body);
+  font-size:.775rem;font-weight:600;letter-spacing:.19em;text-transform:uppercase;
+  color:var(--olive);display:inline-flex;align-items:center;gap:.7em;margin:0 0 1.1rem;
+}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--sage);flex:none}
+
+/* --- skip link --- */
+.skip{
+  position:absolute;left:16px;top:-60px;z-index:200;background:var(--sage-deep);color:var(--cream);
+  padding:12px 20px;border-radius:999px;font-weight:600;text-decoration:none;transition:top .2s var(--ease);
+}
+.skip:focus-visible{top:16px}
+
+/* --- focus --- */
+:focus-visible{outline:2.5px solid var(--sage-deep);outline-offset:3px;border-radius:6px}
+
+/* ============================ knoppen ============================ */
+.btn{
+  --bg:var(--sage-deep);--fg:#FBF8F3;
+  display:inline-flex;align-items:center;justify-content:center;gap:.6em;
+  font-family:var(--body);font-size:1rem;font-weight:600;letter-spacing:.005em;
+  padding:1.02em 1.85em;min-height:52px;border-radius:999px;border:1.5px solid transparent;
+  background:var(--bg);color:var(--fg);text-decoration:none;cursor:pointer;
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease),background-color .35s var(--ease),color .35s var(--ease);
+  box-shadow:0 10px 24px -14px rgba(79,107,85,.85);
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 30px -14px rgba(79,107,85,.7)}
+.btn .arw{transition:transform .35s var(--ease)}
+.btn:hover .arw{transform:translateX(4px)}
+
+.btn-ghost{--bg:transparent;--fg:var(--ink);border-color:rgba(111,127,101,.42);box-shadow:none}
+.btn-ghost:hover{background:rgba(231,238,227,.7);box-shadow:none}
+
+.btn-cream{--bg:var(--cream);--fg:var(--sage-deep);box-shadow:0 12px 28px -16px rgba(28,40,30,.6)}
+
+.link-arrow{
+  display:inline-flex;align-items:center;gap:.5em;font-weight:600;font-size:.95rem;
+  color:var(--sage-deep);text-decoration:none;
+  border-bottom:1.5px solid rgba(79,107,85,.32);padding-bottom:2px;
+  transition:border-color .3s var(--ease),gap .3s var(--ease);
+}
+.link-arrow:hover{border-color:var(--sage-deep);gap:.8em}
+
+/* ============================ header ============================ */
+.site-header{
+  position:fixed;inset:0 0 auto 0;z-index:100;
+  padding-block:clamp(14px,1.6vw,22px);
+  transition:background-color .45s var(--ease),box-shadow .45s var(--ease),padding .45s var(--ease),backdrop-filter .45s var(--ease);
+}
+.site-header.is-stuck{
+  background:rgba(251,248,243,.82);
+  -webkit-backdrop-filter:blur(14px) saturate(1.1);
+  backdrop-filter:blur(14px) saturate(1.1);
+  box-shadow:0 1px 0 rgba(111,127,101,.14),0 12px 30px -26px rgba(44,56,47,.5);
+  padding-block:10px;
+}
+.header-inner{display:flex;align-items:center;gap:clamp(16px,3vw,40px)}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;margin-right:auto}
+.brand-mark{width:34px;height:34px;flex:none;color:var(--sage-deep)}
+.brand-name{font-family:var(--display);font-size:1.28rem;color:var(--ink);line-height:1.05;font-variation-settings:"SOFT" 50,"opsz" 40;letter-spacing:-.01em}
+.brand-sub{display:block;font-family:var(--body);font-size:.685rem;letter-spacing:.15em;text-transform:uppercase;color:var(--olive);margin-top:.34em}
+
+.nav{display:flex;align-items:center;gap:clamp(4px,1.1vw,10px)}
+.nav a{
+  text-decoration:none;font-size:.945rem;font-weight:500;color:var(--ink-soft);
+  padding:.55em .78em;border-radius:999px;position:relative;
+  transition:color .3s var(--ease),background-color .3s var(--ease);
+}
+.nav a:hover{color:var(--ink);background:rgba(231,238,227,.75)}
+.nav a[aria-current="true"]{color:var(--ink)}
+.nav a[aria-current="true"]::after{
+  content:"";position:absolute;left:50%;translate:-50% 0;bottom:.24em;
+  width:5px;height:5px;border-radius:50%;background:var(--sage);
+}
+.header-cta{margin-left:clamp(6px,1.2vw,18px);padding:.78em 1.4em;min-height:46px;font-size:.94rem}
+
+.burger{
+  display:none;width:48px;height:48px;border:1.5px solid rgba(111,127,101,.35);background:rgba(251,248,243,.6);
+  border-radius:999px;align-items:center;justify-content:center;cursor:pointer;flex:none;
+}
+.burger span{display:block;width:19px;height:1.6px;background:var(--ink);border-radius:2px;position:relative;transition:transform .4s var(--ease),opacity .3s var(--ease)}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:19px;height:1.6px;background:var(--ink);border-radius:2px;transition:transform .4s var(--ease)}
+.burger span::before{top:-6px}
+.burger span::after{top:6px}
+.burger[aria-expanded="true"] span{transform:rotate(45deg)}
+.burger[aria-expanded="true"] span::before{transform:translateY(6px) rotate(-90deg)}
+.burger[aria-expanded="true"] span::after{opacity:0}
+
+.mobile-panel{
+  position:fixed;inset:0;z-index:99;background:var(--cream);
+  padding:104px var(--pad) 40px;
+  display:flex;flex-direction:column;gap:6px;
+  opacity:0;visibility:hidden;transform:translateY(-10px);
+  transition:opacity .4s var(--ease),transform .4s var(--ease),visibility .4s;
+  overflow-y:auto;
+}
+.mobile-panel.is-open{opacity:1;visibility:visible;transform:none}
+.mobile-panel a{
+  text-decoration:none;font-family:var(--display);font-size:1.6rem;color:var(--ink);
+  padding:.5em 0;border-bottom:1px solid rgba(111,127,101,.16);
+  opacity:0;transform:translateY(8px);
+}
+.mobile-panel.is-open a{animation:mnav .5s var(--ease) forwards;animation-delay:calc(var(--i) * 45ms + 90ms)}
+@keyframes mnav{to{opacity:1;transform:none}}
+.mobile-panel .btn{margin-top:26px;width:100%}
+
+/* ============================ hero ============================ */
+.hero{padding-top:clamp(126px,17vh,190px);padding-bottom:clamp(60px,8vw,110px);position:relative}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(34px,5vw,74px);align-items:center}
+.hero-copy{max-width:33ch}
+.hero h1 .accent{color:var(--sage-deep)}
+.hero-sub{font-family:var(--body);font-size:clamp(1.05rem,1.25vw,1.18rem);font-weight:500;color:var(--ink);margin:1.5rem 0 .85rem;max-width:38ch;line-height:1.6}
+.hero-text{max-width:44ch;margin-bottom:2.3rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.hero-sprig{color:var(--sage);opacity:.85;margin-top:2.6rem;width:104px}
+
+.hero-media{position:relative}
+.hero-badge{
+  position:absolute;left:-6%;bottom:7%;z-index:3;max-width:16.5rem;
+  background:rgba(251,248,243,.94);
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+  border-radius:26px 26px 26px 8px;
+  padding:1.05rem 1.3rem;box-shadow:var(--shadow-m);
+  display:flex;gap:.8rem;align-items:flex-start;
+  font-size:.93rem;line-height:1.5;color:var(--ink);
+}
+.hero-badge .heart{color:var(--blush);flex:none;margin-top:2px;width:19px}
+
+/* ---------- organische fotokaders ---------- */
+.photo{position:relative;overflow:hidden;background:var(--sage-wash);box-shadow:var(--shadow-l)}
+.photo img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease)}
+.photo:hover img{transform:scale(1.03)}
+.photo-blob-a{border-radius:56% 44% 48% 52% / 44% 50% 50% 56%;aspect-ratio:1/1.06}
+.photo-blob-b{border-radius:46% 54% 58% 42% / 52% 44% 56% 48%;aspect-ratio:1/1.02}
+.photo-arch{border-radius:200px 200px 34px 34px;aspect-ratio:1/1.18}
+.photo-soft{border-radius:34px;aspect-ratio:4/3}
+
+/* placeholder-illustraties: vervang de <svg> door <img> wanneer de fotografie klaar is */
+.ph{width:100%;height:100%;display:block}
+
+/* ============================ intro ============================ */
+.intro-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(34px,6vw,86px);align-items:center}
+.intro-media{position:relative}
+.leaf-float{position:absolute;color:var(--sage);opacity:.5}
+
+/* ============================ waarden ============================ */
+.values-head{max-width:56ch;margin-bottom:clamp(38px,4.4vw,62px)}
+.cards{display:grid;gap:clamp(14px,1.6vw,20px)}
+.cards-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.cards-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card{
+  background:rgba(255,253,249,.72);
+  border:1px solid rgba(111,127,101,.13);
+  border-radius:var(--radius-l);
+  padding:clamp(24px,2.4vw,32px);
+  box-shadow:var(--shadow-s);
+  transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .4s var(--ease),background-color .4s var(--ease);
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-m);border-color:rgba(159,183,156,.5);background:rgba(255,253,249,.95)}
+.card h3{margin-bottom:.55rem}
+.card p{font-size:.985rem;line-height:1.65;margin:0}
+.card-icon{
+  width:46px;height:46px;border-radius:14px;display:grid;place-items:center;
+  background:var(--sage-wash);color:var(--sage-deep);margin-bottom:1.15rem;
+}
+.card-icon svg{width:23px;height:23px}
+.card:nth-child(2) .card-icon{background:#F6E7DC}
+.card:nth-child(3) .card-icon{background:#F3E3E1}
+.card:nth-child(5) .card-icon{background:#F6E7DC}
+.card:nth-child(6) .card-icon{background:#F3E3E1}
+
+/* ============================ voor wie ============================ */
+.split{display:grid;grid-template-columns:.82fr 1.18fr;gap:clamp(34px,5vw,72px);align-items:start}
+.split-media{position:sticky;top:110px}
+.note{
+  margin-top:clamp(20px,2.4vw,30px);
+  background:var(--sage-wash);border-radius:var(--radius-m);
+  padding:1.15rem 1.5rem;font-size:.97rem;color:var(--ink-soft);
+  display:flex;gap:.85rem;align-items:flex-start;
+}
+.note svg{flex:none;color:var(--sage-deep);width:20px;margin-top:3px}
+.theme-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.6vw,20px)}
+
+/* ============================ over mij ============================ */
+.about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(34px,5.6vw,80px);align-items:center}
+.quote{
+  margin:clamp(56px,7vw,96px) auto 0;max-width:23ch;text-align:center;position:relative;
+  font-size:clamp(1.75rem,3.5vw,2.75rem);line-height:1.26;color:var(--ink);
+  font-variation-settings:"SOFT" 60,"opsz" 130;
+}
+.quote::before,.quote::after{
+  content:"";position:absolute;width:64px;height:1px;background:var(--sage);left:50%;translate:-50% 0;opacity:.75;
+}
+.quote::before{top:-34px}
+.quote::after{bottom:-34px}
+
+/* ============================ werkwijze ============================ */
+.timeline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(18px,2.2vw,30px);position:relative;margin-top:clamp(40px,4.6vw,64px)}
+.timeline::before{
+  content:"";position:absolute;top:23px;left:8%;right:8%;height:1.5px;
+  background:linear-gradient(90deg,transparent,var(--sage-soft) 12%,var(--sage-soft) 88%,transparent);
+}
+.step{position:relative;padding-top:0}
+.step-dot{
+  width:47px;height:47px;border-radius:50%;display:grid;place-items:center;
+  background:var(--cream);border:1.5px solid var(--sage-soft);color:var(--sage-deep);
+  font-family:var(--display);font-size:.95rem;font-variation-settings:"SOFT" 40,"opsz" 20;
+  position:relative;z-index:2;margin-bottom:1.3rem;
+  transition:background-color .4s var(--ease),border-color .4s var(--ease),color .4s var(--ease);
+}
+.step:hover .step-dot{background:var(--sage-deep);border-color:var(--sage-deep);color:var(--cream)}
+.step h3{margin-bottom:.5rem}
+.step p{font-size:.97rem;line-height:1.65;margin:0}
+.timeline-foot{
+  margin-top:clamp(38px,4.4vw,58px);text-align:center;
+  font-family:var(--display);font-size:clamp(1.1rem,1.7vw,1.4rem);color:var(--ink);
+  font-variation-settings:"SOFT" 55,"opsz" 60;
+}
+
+/* ============================ aanbod ============================ */
+.offer{
+  display:flex;flex-direction:column;
+  background:rgba(255,253,249,.78);
+  border:1px solid rgba(111,127,101,.14);
+  border-radius:var(--radius-l);
+  padding:clamp(26px,2.6vw,34px);
+  box-shadow:var(--shadow-s);
+  transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .4s var(--ease);
+}
+.offer:hover{transform:translateY(-3px);box-shadow:var(--shadow-m);border-color:rgba(159,183,156,.5)}
+.offer-tag{
+  font-size:.72rem;letter-spacing:.17em;text-transform:uppercase;font-weight:600;
+  color:var(--olive);margin-bottom:1rem;display:block;
+}
+.offer h3{font-size:clamp(1.35rem,1.9vw,1.65rem);margin-bottom:.7rem}
+.offer p{font-size:.985rem;line-height:1.68;margin-bottom:1.6rem}
+.offer .link-arrow{margin-top:auto;align-self:flex-start}
+.offer-mark{width:30px;color:var(--sage);margin-bottom:1.1rem}
+
+/* ============================ grenzen ============================ */
+.limits{
+  background:linear-gradient(180deg,var(--cream-2),#F7F0E6);
+  border-radius:var(--radius-l);
+  padding:clamp(32px,4.4vw,62px);
+  display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,3vw,44px);align-items:start;
+  box-shadow:var(--shadow-s);
+}
+.limits-icon{width:56px;height:56px;border-radius:50%;background:rgba(251,248,243,.85);display:grid;place-items:center;color:var(--sage-deep)}
+.limits h2{font-size:clamp(1.5rem,2.4vw,2rem);margin-bottom:1rem}
+.limits p{max-width:66ch}
+
+/* ============================ FAQ ============================ */
+.faq{max-width:820px;margin-inline:auto}
+.faq-item{border-bottom:1px solid rgba(111,127,101,.18)}
+.faq-item:first-child{border-top:1px solid rgba(111,127,101,.18)}
+.faq-q{
+  width:100%;background:none;border:0;cursor:pointer;text-align:left;
+  display:flex;align-items:center;justify-content:space-between;gap:1.5rem;
+  padding:1.5rem .25rem;min-height:64px;
+  font-family:var(--display);font-size:clamp(1.08rem,1.45vw,1.28rem);color:var(--ink);
+  font-variation-settings:"SOFT" 40,"opsz" 40;
+  transition:color .3s var(--ease);
+}
+.faq-q:hover{color:var(--sage-deep)}
+.faq-icon{flex:none;width:30px;height:30px;border-radius:50%;border:1.5px solid var(--sage-soft);display:grid;place-items:center;position:relative;transition:background-color .35s var(--ease),border-color .35s var(--ease)}
+.faq-icon::before,.faq-icon::after{content:"";position:absolute;background:var(--sage-deep);border-radius:2px;transition:transform .4s var(--ease),background-color .35s var(--ease)}
+.faq-icon::before{width:11px;height:1.6px}
+.faq-icon::after{width:1.6px;height:11px}
+.faq-q[aria-expanded="true"] .faq-icon{background:var(--sage-deep);border-color:var(--sage-deep)}
+.faq-q[aria-expanded="true"] .faq-icon::before,
+.faq-q[aria-expanded="true"] .faq-icon::after{background:var(--cream)}
+.faq-q[aria-expanded="true"] .faq-icon::after{transform:rotate(90deg)}
+.faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s var(--ease)}
+.faq-q[aria-expanded="true"] + .faq-a{grid-template-rows:1fr}
+.faq-a > div{overflow:hidden}
+.faq-a p{padding:0 3rem 1.7rem .25rem;font-size:1rem;max-width:64ch}
+
+/* ============================ grote CTA ============================ */
+.cta-band{position:relative;overflow:hidden;background:var(--sage-deep);color:#F2F5EE;border-radius:clamp(28px,3.6vw,52px);padding:clamp(48px,7vw,104px) clamp(26px,5vw,72px);text-align:center}
+.cta-band h2{color:#FBF8F3;max-width:20ch;margin-inline:auto}
+.cta-band p{color:rgba(242,245,238,.86);max-width:46ch;margin-inline:auto}
+.cta-actions{display:flex;flex-direction:column;align-items:center;gap:1.1rem;margin-top:2.3rem}
+.cta-note{font-size:.95rem;color:rgba(242,245,238,.78)}
+.cta-note a{color:#FBF8F3;text-underline-offset:4px}
+.cta-botanic{position:absolute;color:rgba(206,220,201,.3);pointer-events:none}
+.cta-botanic.one{left:-40px;bottom:-40px;width:230px}
+.cta-botanic.two{right:-30px;top:-50px;width:200px;transform:scaleX(-1)}
+
+/* ============================ footer ============================ */
+.site-footer{background:var(--cream-2);padding-block:clamp(52px,6vw,76px) 30px;margin-top:clamp(60px,7vw,110px)}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:clamp(28px,4vw,60px)}
+.footer-title{font-size:.78rem;letter-spacing:.17em;text-transform:uppercase;font-weight:600;color:var(--olive);margin-bottom:1.15rem}
+.footer-list{list-style:none;margin:0;padding:0;display:grid;gap:.62rem;font-size:.97rem}
+.footer-list a{text-decoration:none;color:var(--ink-soft);transition:color .3s var(--ease)}
+.footer-list a:hover{color:var(--sage-deep)}
+.footer-brand p{font-size:.97rem;max-width:34ch;margin-top:1.1rem}
+.footer-bottom{
+  margin-top:clamp(38px,4vw,58px);padding-top:24px;border-top:1px solid rgba(111,127,101,.16);
+  display:flex;flex-wrap:wrap;gap:.9rem 1.7rem;align-items:center;justify-content:space-between;
+  font-size:.88rem;color:var(--olive);
+}
+.footer-bottom nav{display:flex;flex-wrap:wrap;gap:.9rem 1.7rem}
+.footer-bottom a{text-decoration:none}
+.footer-bottom a:hover{color:var(--sage-deep)}
+
+/* ============================ reveal ============================ */
+.js .reveal{opacity:0;transform:translateY(16px);transition:opacity .85s var(--ease),transform .85s var(--ease);transition-delay:var(--d,0s)}
+.js .reveal.is-in{opacity:1;transform:none}
+
+/* ============================ responsive ============================ */
+@media (max-width:1000px){
+  .nav,.header-cta{display:none}
+  .burger{display:flex}
+  .hero-grid{grid-template-columns:1fr;gap:clamp(46px,8vw,64px)}
+  .hero-copy{max-width:36ch}
+  .hero-media{max-width:520px;margin-inline:auto;width:100%}
+  .hero-badge{left:0;bottom:-14px}
+  .intro-grid,.about-grid,.split{grid-template-columns:1fr}
+  .split-media{position:static;max-width:460px}
+  .about-media{max-width:460px}
+  .cards-3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .timeline{grid-template-columns:1fr;gap:0;padding-left:8px}
+  .timeline::before{top:6px;bottom:6px;left:23px;right:auto;width:1.5px;height:auto;
+    background:linear-gradient(180deg,transparent,var(--sage-soft) 6%,var(--sage-soft) 94%,transparent)}
+  .step{padding-left:74px;padding-bottom:34px}
+  .step:last-child{padding-bottom:0}
+  .step-dot{position:absolute;left:0;top:0;margin:0}
+  .timeline-foot{text-align:left}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .footer-brand{grid-column:1/-1}
+}
+@media (max-width:660px){
+  .cards-3,.cards-2,.theme-list{grid-template-columns:1fr}
+  .limits{grid-template-columns:1fr}
+  .faq-a p{padding-right:1rem}
+  .hero-actions .btn{width:100%}
+  .hero-badge{position:static;margin-top:22px;max-width:none;border-radius:22px}
+  .quote::before{top:-26px}
+  .quote::after{bottom:-26px}
+  .footer-grid{grid-template-columns:1fr}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html:focus-within{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
+  .js .reveal{opacity:1;transform:none}
+  .mobile-panel.is-open a{opacity:1;transform:none}
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Naar de inhoud</a>
+
+<!-- ============================ HEADER ============================ -->
+<header class="site-header" id="header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Tot Bloei, naar boven">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <path d="M20 34V16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+        <path d="M20 24c-5.4 0-8.4-2.8-8.4-7.2 4.4 0 8.4 2.4 8.4 7.2Z" fill="#9FB79C"/>
+        <path d="M20 19.4c0-4.6 3.1-7.4 7.6-7.4 0 4.6-3 7.4-7.6 7.4Z" fill="#CEDCC9"/>
+        <path d="M20 13.6c-1.9-1.4-2.2-3.6-.6-5 1.7 1 2.2 3.3.6 5Z" fill="#E7CBC6"/>
+      </svg>
+      <span>
+        <span class="brand-name">Tot Bloei</span>
+        <span class="brand-sub">Opvoed- &amp; kindercoaching</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Hoofdnavigatie">
+      <a href="#top">Home</a>
+      <a href="#over-mij">Over mij</a>
+      <a href="#werkwijze">Werkwijze</a>
+      <a href="#voor-wie">Voor wie</a>
+      <a href="#aanbod">Aanbod</a>
+      <a href="#praktisch">Praktische info</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="btn header-cta" href="#contact">Kennismaken</a>
+
+    <button class="burger" id="burger" aria-label="Menu openen" aria-expanded="false" aria-controls="mobile-panel">
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-panel" id="mobile-panel" hidden>
+  <a href="#top" style="--i:0">Home</a>
+  <a href="#over-mij" style="--i:1">Over mij</a>
+  <a href="#werkwijze" style="--i:2">Werkwijze</a>
+  <a href="#voor-wie" style="--i:3">Voor wie</a>
+  <a href="#aanbod" style="--i:4">Aanbod</a>
+  <a href="#praktisch" style="--i:5">Praktische info</a>
+  <a href="#contact" style="--i:6">Contact</a>
+  <a class="btn" href="#contact" style="--i:7">Laten we kennismaken</a>
+</div>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- ============================ HERO ============================ -->
+<section class="section hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">Opvoed- &amp; kindercoaching</p>
+      <h1>Ruimte voor <span class="accent">groei, rust en verbinding</span></h1>
+      <p class="hero-sub">Opvoed- en kindercoaching voor ouders en kinderen van 2 tot 12 jaar.</p>
+      <p class="hero-text">Wanneer opvoeden even niet vanzelf gaat, kijken we samen naar wat er speelt en wat kan helpen.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#contact">Laten we kennismaken</a>
+        <a class="link-arrow" href="#werkwijze">Ontdek hoe ik werk <span aria-hidden="true">→</span></a>
+      </div>
+      <svg class="hero-sprig" viewBox="0 0 120 40" fill="none" aria-hidden="true">
+        <path d="M2 32c26-2 44-10 58-20" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M24 28c-1-5 1-8 5-9 1 5-1 8-5 9Z" stroke="currentColor" stroke-width="1.1"/>
+        <path d="M40 22c-2-4-1-8 3-10 2 4 1 8-3 10Z" stroke="currentColor" stroke-width="1.1"/>
+        <path d="M55 15c-3-3-3-7 0-10 3 3 3 7 0 10Z" stroke="currentColor" stroke-width="1.1"/>
+        <path d="M76 30c3-4 9-4 11 0-2 4-8 4-11 0Z" stroke="currentColor" stroke-width="1.1"/>
+        <path d="M100 26c4-3 9-1 9 3-4 2-8 1-9-3Z" stroke="currentColor" stroke-width="1.1"/>
+      </svg>
+    </div>
+
+    <div class="hero-media reveal" style="--d:.16s">
+      <!-- Vervang de <svg class="ph"> door: <img src="foto-ouder-en-kind.jpg" alt="Ouder en kind zitten samen op de bank in zacht daglicht"> -->
+      <div class="photo photo-blob-a">
+        <svg class="ph" viewBox="0 0 520 550" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Warme sfeerafbeelding van een ouder en kind in zacht daglicht">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2=".4" y2="1">
+              <stop offset="0" stop-color="#F3DCC8"/><stop offset=".55" stop-color="#EFE2D2"/><stop offset="1" stop-color="#DCE6D6"/>
+            </linearGradient>
+          </defs>
+          <rect width="520" height="550" fill="url(#g1)"/>
+          <circle cx="368" cy="128" r="74" fill="#F7EDE0" opacity=".85"/>
+          <path d="M0 402c118-56 214-40 292 6 46 27 122 34 228 20v122H0Z" fill="#CEDCC9" opacity=".75"/>
+          <path d="M0 470c130-44 226-30 300 12 42 24 118 28 220 14v54H0Z" fill="#9FB79C" opacity=".55"/>
+          <g stroke="#4F6B55" stroke-width="1.6" fill="none" opacity=".5" stroke-linecap="round">
+            <path d="M108 500V352"/>
+            <path d="M108 420c-38 0-58-20-58-52 32 0 58 18 58 52Z"/>
+            <path d="M108 388c0-34 22-54 56-54 0 34-22 54-56 54Z"/>
+            <path d="M414 502V386"/>
+            <path d="M414 438c26-2 40-18 38-42-24 2-40 18-38 42Z"/>
+          </g>
+          <circle cx="258" cy="268" r="9" fill="#E7CBC6" opacity=".9"/>
+        </svg>
+      </div>
+      <p class="hero-badge">
+        <svg class="heart" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 20s-7.5-4.6-7.5-9.6A4.4 4.4 0 0 1 12 7.6a4.4 4.4 0 0 1 7.5 2.8C19.5 15.4 12 20 12 20Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+        </svg>
+        Een warme en veilige plek voor jou en je gezin
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ INTRO ============================ -->
+<section class="section" id="intro">
+  <div class="wrap intro-grid">
+    <div class="reveal">
+      <h2>Soms loopt het even anders dan je had gehoopt</h2>
+      <div class="lede measure" style="margin-top:1.6rem">
+        <p>Soms merk je als ouder dat je steeds tegen hetzelfde aanloopt. Je kind wordt snel boos, slaapt onrustig, eet moeilijk, voelt veel, is onzeker of laat gedrag zien dat je lastig kunt plaatsen.</p>
+        <p>Je wilt graag helpen, maar weet niet altijd wat werkt.</p>
+        <p>Bij Tot Bloei kijken we samen naar wat er achter gedrag kan spelen en wat jullie als gezin nodig hebben om weer meer rust, vertrouwen en verbinding te ervaren.</p>
+      </div>
+    </div>
+
+    <div class="intro-media reveal" style="--d:.12s">
+      <svg class="leaf-float" style="top:-34px;left:-26px;width:66px" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+        <path d="M8 52C8 26 26 10 52 8c2 26-16 44-44 44Z" stroke="currentColor" stroke-width="1.2"/>
+        <path d="M8 52C20 40 34 26 52 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+      <!-- Vervang door: <img src="foto-detail-planten-licht.jpg" alt="Zacht daglicht op een houten tafel met planten"> -->
+      <div class="photo photo-arch">
+        <svg class="ph" viewBox="0 0 420 500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Rustig interieur met daglicht, hout en planten">
+          <defs>
+            <linearGradient id="g2" x1=".2" y1="0" x2=".8" y2="1">
+              <stop offset="0" stop-color="#E7EEE3"/><stop offset=".6" stop-color="#EFE2D2"/><stop offset="1" stop-color="#E7CBC6"/>
+            </linearGradient>
+          </defs>
+          <rect width="420" height="500" fill="url(#g2)"/>
+          <circle cx="212" cy="150" r="96" fill="#FBF8F3" opacity=".62"/>
+          <path d="M0 372c96-40 168-24 244 14 34 17 96 20 176 8v106H0Z" fill="#CEDCC9" opacity=".8"/>
+          <g stroke="#4F6B55" stroke-width="1.5" fill="none" opacity=".48" stroke-linecap="round">
+            <path d="M212 470V210"/>
+            <path d="M212 320c-44-4-66-30-62-70 42 4 66 30 62 70Z"/>
+            <path d="M212 268c4-42 32-64 74-60-4 42-32 64-74 60Z"/>
+            <path d="M212 392c-32-2-48-20-46-48 30 2 48 20 46 48Z"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ KERNWAARDEN ============================ -->
+<section class="section" id="waarden">
+  <div class="wrap">
+    <div class="values-head reveal">
+      <p class="eyebrow">Waar ik voor sta</p>
+      <h2>Begeleiding die begint bij rust en vertrouwen</h2>
+    </div>
+
+    <div class="cards cards-3">
+      <article class="card reveal">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20s-7-4.3-7-9a3.9 3.9 0 0 1 7-2.4A3.9 3.9 0 0 1 19 11c0 4.7-7 9-7 9Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+        <h3>Warm &amp; betrokken</h3>
+        <p>Een veilige plek zonder oordeel, waar jij jezelf mag zijn.</p>
+      </article>
+
+      <article class="card reveal" style="--d:.06s">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.2" stroke="currentColor" stroke-width="1.5"/><path d="m15.6 15.6 4 4M11 8.4v5.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <h3>Kijken naar de kern</h3>
+        <p>We gaan verder dan alleen het gedrag en onderzoeken wat er echt speelt.</p>
+      </article>
+
+      <article class="card reveal" style="--d:.12s">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="8.5" cy="8" r="3.2" stroke="currentColor" stroke-width="1.5"/><circle cx="16.5" cy="12" r="2.4" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 19c.6-3 2.6-4.6 5-4.6s4.4 1.6 5 4.6M14 19c.3-1.8 1.4-2.8 2.8-2.8 1.3 0 2.4 1 2.7 2.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <h3>Kind én ouder</h3>
+        <p>We betrekken zowel het kind als de ouder in het proces.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 8.5h16M4 13h11M4 17.5h7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <h3>Rust &amp; overzicht</h3>
+        <p>We brengen rust, inzicht en duidelijkheid in wat even overweldigend voelt.</p>
+      </article>
+
+      <article class="card reveal" style="--d:.06s">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19c2.5-3 5-4.5 7.5-4.5S17.5 16 20 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M12 14V5m0 0L9 8m3-3 3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Praktisch &amp; nuchter</h3>
+        <p>Geen perfecte plaatjes, maar realistische stappen die passen bij jullie.</p>
+      </article>
+
+      <article class="card reveal" style="--d:.12s">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M12 14c-4 0-6-2.2-6-5.6 3.4 0 6 1.9 6 5.6Zm0-2.6c0-3.4 2.4-5.4 5.8-5.4 0 3.4-2.4 5.4-5.8 5.4Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></div>
+        <h3>Groei op eigen tempo</h3>
+        <p>Elk kind, elke ouder en elk gezin is uniek. We gaan in jullie tempo.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ VOOR WIE ============================ -->
+<section class="section" id="voor-wie">
+  <div class="wrap split">
+    <div class="split-media reveal">
+      <!-- Vervang door: <img src="foto-kind-buiten.jpg" alt="Kind speelt buiten tussen het gras en de bloemen"> -->
+      <div class="photo photo-blob-b">
+        <svg class="ph" viewBox="0 0 460 470" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Kind dat buiten speelt tussen gras en bloemen">
+          <defs>
+            <linearGradient id="g3" x1="0" y1="0" x2=".6" y2="1">
+              <stop offset="0" stop-color="#EFE2D2"/><stop offset=".5" stop-color="#E7EEE3"/><stop offset="1" stop-color="#CEDCC9"/>
+            </linearGradient>
+          </defs>
+          <rect width="460" height="470" fill="url(#g3)"/>
+          <circle cx="120" cy="112" r="62" fill="#F7EDE0" opacity=".8"/>
+          <path d="M0 330c110-44 190-26 262 16 40 23 106 28 198 14v110H0Z" fill="#9FB79C" opacity=".5"/>
+          <g stroke="#4F6B55" stroke-width="1.5" fill="none" opacity=".5" stroke-linecap="round">
+            <path d="M136 440v-96M96 440v-64M176 440v-72"/>
+            <path d="M136 372c-24 0-36-12-36-32 20 0 36 12 36 32Z"/>
+            <path d="M176 388c18-2 28-14 26-30-18 2-28 14-26 30Z"/>
+          </g>
+          <g fill="#E7CBC6" opacity=".9">
+            <circle cx="330" cy="300" r="7"/><circle cx="352" cy="286" r="7"/><circle cx="352" cy="314" r="7"/><circle cx="374" cy="300" r="7"/>
+          </g>
+          <circle cx="352" cy="300" r="4.5" fill="#F3DCC8"/>
+        </svg>
+      </div>
+    </div>
+
+    <div>
+      <div class="reveal">
+        <p class="eyebrow">Voor wie</p>
+        <h2>Voor wie</h2>
+        <p class="lede measure" style="margin:1.4rem 0 2.4rem">Bij Tot Bloei kun je terecht met vragen rondom opvoeding, gedrag, emoties en ontwikkeling.</p>
+      </div>
+
+      <div class="theme-list">
+        <article class="card reveal">
+          <h3>Emoties &amp; gedrag</h3>
+          <p>Boosheid, verdriet, driftbuien of gedrag dat je moeilijk kunt plaatsen.</p>
+        </article>
+        <article class="card reveal" style="--d:.06s">
+          <h3>Overprikkeling</h3>
+          <p>Veel voelen, snel overweldigd raken of moeilijk tot rust komen.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Zelfvertrouwen</h3>
+          <p>Onzekerheid, faalangst of moeite om voor zichzelf op te komen.</p>
+        </article>
+        <article class="card reveal" style="--d:.06s">
+          <h3>Samen spelen &amp; sociale vaardigheden</h3>
+          <p>Moeite met contact maken, delen, samenspelen of grenzen aangeven.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Opvoeden</h3>
+          <p>Twijfel aan grenzen, luisteren, structuur, consequent zijn of verbinding houden.</p>
+        </article>
+        <article class="card reveal" style="--d:.06s">
+          <h3>Veranderingen</h3>
+          <p>Bijvoorbeeld een scheiding, verhuizing, nieuwe school of verandering binnen het gezin.</p>
+        </article>
+      </div>
+
+      <p class="note reveal">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M12 15.5c-3.4 0-5.2-1.9-5.2-4.9 3 0 5.2 1.7 5.2 4.9Zm0-2.3c0-3 2.1-4.7 5.1-4.7 0 3-2.1 4.7-5.1 4.7Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        Ook bij vragen over slapen, eten, zindelijkheid, overgangen, angst, spanning en zelfstandigheid kan ik met jullie meedenken.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ OVER MIJ ============================ -->
+<section class="section" id="over-mij">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-media reveal">
+        <!-- Vervang door: <img src="foto-marieke.jpg" alt="Marieke, opvoed- en kindercoach bij Tot Bloei"> -->
+        <div class="photo photo-arch">
+          <svg class="ph" viewBox="0 0 430 510" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Portret van Marieke, opvoed- en kindercoach bij Tot Bloei">
+            <defs>
+              <linearGradient id="g4" x1=".1" y1="0" x2=".9" y2="1">
+                <stop offset="0" stop-color="#E7CBC6"/><stop offset=".45" stop-color="#EFE2D2"/><stop offset="1" stop-color="#E7EEE3"/>
+              </linearGradient>
+            </defs>
+            <rect width="430" height="510" fill="url(#g4)"/>
+            <circle cx="215" cy="196" r="104" fill="#FBF8F3" opacity=".55"/>
+            <path d="M0 396c98-46 172-30 250 10 36 19 100 22 180 8v96H0Z" fill="#CEDCC9" opacity=".72"/>
+            <g stroke="#4F6B55" stroke-width="1.5" fill="none" opacity=".45" stroke-linecap="round">
+              <path d="M340 480V330"/>
+              <path d="M340 400c-30 0-46-16-46-42 26 0 46 16 46 42Z"/>
+              <path d="M340 366c0-26 18-42 44-42 0 26-18 42-44 42Z"/>
+              <path d="M74 484V392"/>
+              <path d="M74 434c-22-2-32-16-30-36 20 2 32 16 30 36Z"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="reveal" style="--d:.1s">
+        <p class="eyebrow">Over mij</p>
+        <h2>Over mij</h2>
+        <div class="lede measure" style="margin-top:1.5rem">
+          <p>Ik ben Marieke, moeder van drie kinderen en al jarenlang werkzaam als pedagogisch medewerker.</p>
+          <p>In mijn werk begeleid ik jonge kinderen in hun ontwikkeling en ondersteun ik ouders bij vragen rondom opvoeding en ontwikkeling.</p>
+          <p>Door mijn werk én door het moederschap heb ik ervaren dat er niet één manier van opvoeden is die bij ieder kind of ieder gezin past.</p>
+          <p>Juist dat maakt dit werk voor mij zo waardevol: samen kijken, zonder oordeel, naar wat een kind en ouder nodig hebben.</p>
+          <p>Vanuit die gedachte is Tot Bloei ontstaan.</p>
+        </div>
+      </div>
+    </div>
+
+    <blockquote class="quote reveal">Ruimte om te groeien — op je eigen manier en in je eigen tempo.</blockquote>
+  </div>
+</section>
+
+<!-- ============================ WERKWIJZE ============================ -->
+<section class="section" id="werkwijze">
+  <div class="wrap">
+    <div class="values-head reveal" style="margin-bottom:0">
+      <p class="eyebrow">Werkwijze</p>
+      <h2>Hoe werkt een traject?</h2>
+    </div>
+
+    <ol class="timeline" style="list-style:none;margin:0;padding:0">
+      <li class="step reveal">
+        <div class="step-dot" aria-hidden="true">01</div>
+        <h3>Kennismaken</h3>
+        <p>We bespreken kort waar jullie tegenaan lopen en of Tot Bloei passend is.</p>
+      </li>
+      <li class="step reveal" style="--d:.08s">
+        <div class="step-dot" aria-hidden="true">02</div>
+        <h3>Intake</h3>
+        <p>We nemen rustig de tijd om jullie situatie, hulpvraag en wat al geprobeerd is te bespreken.</p>
+      </li>
+      <li class="step reveal" style="--d:.16s">
+        <div class="step-dot" aria-hidden="true">03</div>
+        <h3>Coaching</h3>
+        <p>We onderzoeken wat er speelt en zoeken naar praktische handvatten die passen bij jullie gezin.</p>
+      </li>
+      <li class="step reveal" style="--d:.24s">
+        <div class="step-dot" aria-hidden="true">04</div>
+        <h3>Evalueren</h3>
+        <p>We kijken wat veranderd is, wat werkt en wat jullie zelf verder kunnen voortzetten.</p>
+      </li>
+    </ol>
+
+    <p class="timeline-foot reveal">Geen standaardprogramma, maar begeleiding die aansluit bij jullie situatie.</p>
+  </div>
+</section>
+
+<!-- ============================ AANBOD ============================ -->
+<section class="section" id="aanbod">
+  <div class="wrap">
+    <div class="values-head reveal">
+      <p class="eyebrow">Aanbod</p>
+      <h2>Manieren waarop we samen kunnen werken</h2>
+    </div>
+
+    <div class="cards cards-2">
+      <article class="offer reveal">
+        <svg class="offer-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 27V13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M16 20c-6 0-9-3-9-8 5 0 9 2.7 9 8Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        <span class="offer-tag">Eenmalig</span>
+        <h3>Opvoedconsult</h3>
+        <p>Voor ouders die graag één keer willen sparren over een concrete opvoedvraag.</p>
+        <a class="link-arrow" href="#contact">Meer over opvoedconsult <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="offer reveal" style="--d:.07s">
+        <svg class="offer-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 27V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M16 20c-6 0-9-3-9-8 5 0 9 2.7 9 8Zm0-4c0-5 3.6-8 8.6-8 0 5-3.6 8-8.6 8Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        <span class="offer-tag">Voor ouders</span>
+        <h3>Oudercoaching</h3>
+        <p>Voor ouders die merken dat ze steeds in dezelfde patronen terechtkomen en behoefte hebben aan begeleiding.</p>
+        <a class="link-arrow" href="#contact">Meer over oudercoaching <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="offer reveal">
+        <svg class="offer-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="12" r="5" stroke="currentColor" stroke-width="1.4"/><path d="M7 27c1.4-5 4.6-7.6 9-7.6s7.6 2.6 9 7.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        <span class="offer-tag">Voor kinderen</span>
+        <h3>Kindercoaching</h3>
+        <p>Voor kinderen die ondersteuning kunnen gebruiken rondom emoties, zelfvertrouwen, spanning of gedrag.</p>
+        <a class="link-arrow" href="#contact">Meer over kindercoaching <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="offer reveal" style="--d:.07s">
+        <svg class="offer-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="11" cy="12" r="4.4" stroke="currentColor" stroke-width="1.4"/><circle cx="22" cy="16" r="3.2" stroke="currentColor" stroke-width="1.4"/><path d="M4 26c1.2-4.2 3.8-6.4 7-6.4s5.8 2.2 7 6.4M19 26c.5-2.6 2-4 3.8-4s3.3 1.4 3.8 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        <span class="offer-tag">Samen</span>
+        <h3>Ouder &amp; kind</h3>
+        <p>Een combinatie van begeleiding van ouder en kind, afhankelijk van wat passend is.</p>
+        <a class="link-arrow" href="#contact">Meer over ouder &amp; kind <span aria-hidden="true">→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ GRENZEN ============================ -->
+<section class="section" id="grenzen" style="padding-block:0">
+  <div class="wrap">
+    <div class="limits reveal">
+      <div class="limits-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><circle cx="12" cy="12" r="8.4" stroke="currentColor" stroke-width="1.5"/><path d="M12 11.4v5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="8.1" r="1.05" fill="currentColor"/></svg>
+      </div>
+      <div>
+        <h2>Wanneer Tot Bloei niet passend is</h2>
+        <p>Tot Bloei biedt coaching en opvoedondersteuning. Er wordt geen diagnostiek of behandeling van psychische stoornissen aangeboden.</p>
+        <p>Wanneer tijdens een traject blijkt dat andere of specialistische hulp nodig is, denk ik met ouders mee over een passende vervolgstap of verwijzing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PRAKTISCHE INFO ============================ -->
+<section class="section" id="praktisch">
+  <div class="wrap">
+    <div class="values-head reveal" style="text-align:center;margin-inline:auto">
+      <p class="eyebrow" style="justify-content:center">Praktische info</p>
+      <h2>Goed om te weten</h2>
+    </div>
+
+    <div class="faq">
+      <!-- Pas de antwoorden hieronder aan zodra locatie, tarieven en KvK definitief zijn. -->
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false" aria-controls="a1" id="q1">
+          Waar vinden de gesprekken plaats?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a" id="a1" role="region" aria-labelledby="q1"><div>
+          <p>De gesprekken vinden plaats in de praktijk in Friesland, in een rustige ruimte met daglicht. Een oudergesprek kan in overleg ook bij jullie thuis of online plaatsvinden. Voor kinderen kiezen we de plek waar zij zich het prettigst voelen — soms is dat binnen, soms lekker buiten.</p>
+        </div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false" aria-controls="a2" id="q2">
+          Hoe lang duurt een gesprek?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a" id="a2" role="region" aria-labelledby="q2"><div>
+          <p>Een oudergesprek duurt ongeveer 60 minuten. Bij kinderen houd ik een sessie van 45 minuten aan, omdat dat voor de meeste kinderen prettig werkt. Na afloop is er kort ruimte om samen terug te blikken.</p>
+        </div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false" aria-controls="a3" id="q3">
+          Wat kost een traject?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a" id="a3" role="region" aria-labelledby="q3"><div>
+          <p>Een los opvoedconsult van 60 minuten kost € 75. Een traject bestaat meestal uit een intake en drie tot vijf vervolggesprekken; wat passend is bespreken we tijdens de kennismaking, zodat je vooraf weet waar je aan toe bent. Je ontvangt altijd een duidelijk overzicht voordat we starten.</p>
+        </div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false" aria-controls="a4" id="q4">
+          Kan ik eerst vrijblijvend kennismaken?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a" id="a4" role="region" aria-labelledby="q4"><div>
+          <p>Ja, graag zelfs. We plannen een telefonisch kennismakingsgesprek van ongeveer 20 minuten. Je vertelt kort waar jullie tegenaan lopen en ik vertel hoe ik werk. Daarna bepaal je in alle rust of je verder wilt. Deze kennismaking is gratis en verplicht tot niets.</p>
+        </div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false" aria-controls="a5" id="q5">
+          Kan ik ook alleen advies vragen?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a" id="a5" role="region" aria-labelledby="q5"><div>
+          <p>Zeker. Niet elke vraag vraagt om een heel traject. Bij een opvoedconsult kijken we in één gesprek naar jouw concrete vraag en ga je naar huis met een paar praktische handvatten. Wil je daarna toch verder, dan kan dat altijd.</p>
+        </div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false" aria-controls="a6" id="q6">
+          Wordt de begeleiding vergoed?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a" id="a6" role="region" aria-labelledby="q6"><div>
+          <p>Coaching valt niet onder de basisverzekering. Sommige aanvullende verzekeringen, gemeenten of werkgevers vergoeden een deel van de kosten. Het loont om dit vooraf even na te vragen; ik denk graag mee over wat er in jullie situatie mogelijk is.</p>
+        </div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false" aria-controls="a7" id="q7">
+          Hoe snel kan ik terecht?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a" id="a7" role="region" aria-labelledby="q7"><div>
+          <p>Op berichten reageer ik binnen twee werkdagen. Een kennismakingsgesprek is meestal binnen een week te plannen. Gesprekken vinden overdag en op afgesproken avonden plaats, zodat het naast werk en schooltijden past.</p>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ GROTE CTA ============================ -->
+<section class="section" id="contact" style="padding-bottom:0">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <svg class="cta-botanic one" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+        <path d="M100 190V50" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M100 140c-42 0-64-22-64-56 34 0 64 20 64 56Z" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M100 108c0-34 24-56 58-56 0 34-24 56-58 56Z" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M100 170c-28 0-42-14-42-36 22 0 42 14 42 36Z" stroke="currentColor" stroke-width="1.8"/>
+      </svg>
+      <svg class="cta-botanic two" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+        <path d="M100 190V60" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M100 150c-34 0-52-18-52-46 28 0 52 16 52 46Z" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M100 118c0-28 20-46 48-46 0 28-20 46-48 46Z" stroke="currentColor" stroke-width="1.8"/>
+      </svg>
+
+      <h2>Benieuwd of Tot Bloei iets voor jullie kan betekenen?</h2>
+      <p style="margin-top:1.3rem">Je bent van harte welkom voor een vrijblijvende kennismaking.</p>
+      <div class="cta-actions">
+        <a class="btn btn-cream" href="mailto:hallo@totbloeicoaching.nl?subject=Kennismaking%20Tot%20Bloei">Plan een kennismaking</a>
+        <p class="cta-note">Of <a href="mailto:hallo@totbloeicoaching.nl">stuur gerust een bericht</a> als je eerst iets wilt vragen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top" style="margin-right:0">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <path d="M20 34V16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <path d="M20 24c-5.4 0-8.4-2.8-8.4-7.2 4.4 0 8.4 2.4 8.4 7.2Z" fill="#9FB79C"/>
+            <path d="M20 19.4c0-4.6 3.1-7.4 7.6-7.4 0 4.6-3 7.4-7.6 7.4Z" fill="#CEDCC9"/>
+          </svg>
+          <span>
+            <span class="brand-name">Tot Bloei</span>
+            <span class="brand-sub">Opvoed- &amp; kindercoaching</span>
+          </span>
+        </a>
+        <p>Warme, praktische begeleiding voor ouders en kinderen van 2 tot 12 jaar in Friesland.</p>
+      </div>
+
+      <nav aria-label="Footernavigatie">
+        <p class="footer-title">Navigatie</p>
+        <ul class="footer-list">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#over-mij">Over mij</a></li>
+          <li><a href="#werkwijze">Werkwijze</a></li>
+          <li><a href="#voor-wie">Voor wie</a></li>
+          <li><a href="#aanbod">Aanbod</a></li>
+          <li><a href="#praktisch">Praktische info</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <p class="footer-title">Contact</p>
+        <ul class="footer-list">
+          <li><a href="mailto:hallo@totbloeicoaching.nl">hallo@totbloeicoaching.nl</a></li>
+          <li><a href="https://www.instagram.com/totbloeicoaching" rel="noopener">Instagram · @totbloeicoaching</a></li>
+          <li>Regio Friesland</li>
+          <!-- <li>KvK 00000000</li> -->
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p style="margin:0">© <span id="year">2026</span> Tot Bloei</p>
+      <nav aria-label="Juridisch">
+        <a href="#">Privacy</a>
+        <a href="#">Algemene voorwaarden</a>
+        <a href="#">Klachtenregeling</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* header: transparant → crème met blur */
+const header = document.getElementById('header');
+const onScroll = () => header.classList.toggle('is-stuck', window.scrollY > 24);
+onScroll();
+window.addEventListener('scroll', onScroll, {passive:true});
+
+/* mobiel menu */
+const burger = document.getElementById('burger');
+const panel = document.getElementById('mobile-panel');
+const setMenu = (open) => {
+  burger.setAttribute('aria-expanded', String(open));
+  burger.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+  if (open) { panel.hidden = false; requestAnimationFrame(() => panel.classList.add('is-open')); }
+  else { panel.classList.remove('is-open'); setTimeout(() => { panel.hidden = true; }, reduce ? 0 : 400); }
+  document.body.style.overflow = open ? 'hidden' : '';
+};
+burger.addEventListener('click', () => setMenu(burger.getAttribute('aria-expanded') !== 'true'));
+panel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') { setMenu(false); burger.focus(); } });
+
+/* accordion */
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const open = btn.getAttribute('aria-expanded') === 'true';
+    document.querySelectorAll('.faq-q').forEach(o => o.setAttribute('aria-expanded','false'));
+    btn.setAttribute('aria-expanded', String(!open));
+  });
+});
+
+/* rustige reveals bij scrollen */
+const items = document.querySelectorAll('.reveal');
+if (reduce || !('IntersectionObserver' in window)) {
+  items.forEach(el => el.classList.add('is-in'));
+} else {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('is-in'); io.unobserve(entry.target); }
+    });
+  }, {rootMargin:'0px 0px -8% 0px', threshold:.12});
+  items.forEach(el => io.observe(el));
+}
+
+/* actieve sectie in de navigatie */
+const links = [...document.querySelectorAll('.nav a')];
+const targets = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+if ('IntersectionObserver' in window && targets.length) {
+  const spy = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      links.forEach(a => a.removeAttribute('aria-current'));
+      const active = links.find(a => a.getAttribute('href') === '#' + entry.target.id);
+      if (active) active.setAttribute('aria-current','true');
+    });
+  }, {rootMargin:'-45% 0px -50% 0px'});
+  targets.forEach(t => spy.observe(t));
+}
+</script>
+</body>
+</html>
