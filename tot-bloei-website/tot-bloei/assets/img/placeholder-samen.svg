@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Tijdelijke sfeerafbeelding">
+  <defs><linearGradient id="e" x1="0" y1="0" x2=".7" y2="1">
+    <stop offset="0" stop-color="#E7EEE3"/><stop offset=".5" stop-color="#F3DCC8"/><stop offset="1" stop-color="#E7CBC6"/>
+  </linearGradient></defs>
+  <rect width="600" height="450" fill="url(#e)"/>
+  <circle cx="470" cy="104" r="70" fill="#FBF8F3" opacity=".6"/>
+  <path d="M0 300c130-52 230-32 320 14 46 24 130 28 280 12v124H0Z" fill="#CEDCC9" opacity=".78"/>
+  <g stroke="#4F6B55" stroke-width="1.5" fill="none" opacity=".45" stroke-linecap="round">
+    <path d="M150 420V282"/><path d="M150 350c-34 0-52-18-52-46 30 0 52 18 52 46Z"/>
+    <path d="M150 320c0-30 20-48 50-48 0 30-20 48-50 48Z"/>
+    <path d="M456 424V330"/><path d="M456 374c24-2 36-16 34-38-22 2-36 16-34 38Z"/>
+  </g>
+</svg>

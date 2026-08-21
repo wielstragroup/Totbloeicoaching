@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 510" role="img" aria-label="Tijdelijke portretafbeelding">
+  <defs><linearGradient id="d" x1=".1" y1="0" x2=".9" y2="1">
+    <stop offset="0" stop-color="#E7CBC6"/><stop offset=".45" stop-color="#EFE2D2"/><stop offset="1" stop-color="#E7EEE3"/>
+  </linearGradient></defs>
+  <rect width="430" height="510" fill="url(#d)"/>
+  <circle cx="215" cy="196" r="104" fill="#FBF8F3" opacity=".55"/>
+  <path d="M0 396c98-46 172-30 250 10 36 19 100 22 180 8v96H0Z" fill="#CEDCC9" opacity=".72"/>
+  <g stroke="#4F6B55" stroke-width="1.5" fill="none" opacity=".45" stroke-linecap="round">
+    <path d="M340 480V330"/><path d="M340 400c-30 0-46-16-46-42 26 0 46 16 46 42Z"/>
+    <path d="M340 366c0-26 18-42 44-42 0 26-18 42-44 42Z"/>
+    <path d="M74 484V392"/><path d="M74 434c-22-2-32-16-30-36 20 2 32 16 30 36Z"/>
+  </g>
+</svg>

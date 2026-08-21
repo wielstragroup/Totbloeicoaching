@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /privacy
+Disallow: /algemene-voorwaarden
+Disallow: /klachtenregeling
+
+Sitemap: https://www.totbloeicoaching.nl/sitemap.xml
