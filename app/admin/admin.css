@@ -1,0 +1,169 @@
+/* ============================================================
+   Beheeromgeving — zelfde kleuren als de site, maar sober.
+   De publieke CSS blijft ongemoeid; dit bestand geldt alleen
+   binnen /admin.
+   ============================================================ */
+
+.adm{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:250px minmax(0,1fr);
+  background:var(--cream);
+  color:var(--ink-soft);
+  font-family:var(--body);
+  font-size:16px;
+  line-height:1.6;
+}
+
+/* --------------------------------------------------------- zijbalk */
+.adm-side{
+  background:var(--cream-2);
+  border-right:1px solid rgba(111,127,101,.16);
+  padding:26px 18px;
+  display:flex;flex-direction:column;gap:26px;
+  position:sticky;top:0;height:100vh;overflow-y:auto;
+}
+.adm-brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--sage-deep)}
+.adm-brand .brand-mark{width:30px;height:30px}
+.adm-brand strong{font-family:var(--display);font-size:1.1rem;color:var(--ink);font-weight:400}
+.adm-nav{display:grid;gap:2px}
+.adm-nav p{
+  font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;
+  color:var(--olive);margin:14px 0 6px 10px;
+}
+.adm-nav a{
+  display:block;text-decoration:none;color:var(--ink-soft);
+  padding:.5em .7em;border-radius:10px;font-size:.95rem;
+}
+.adm-nav a:hover{background:rgba(231,238,227,.8);color:var(--ink)}
+.adm-nav a[aria-current="page"]{background:var(--sage-wash);color:var(--ink);font-weight:600}
+.adm-side-foot{margin-top:auto;font-size:.85rem;color:var(--olive);display:grid;gap:8px}
+.adm-side-foot a,.adm-side-foot button{
+  background:none;border:0;padding:0;font:inherit;color:var(--olive);
+  text-align:left;cursor:pointer;text-decoration:underline;text-underline-offset:3px;
+}
+.adm-side-foot a:hover,.adm-side-foot button:hover{color:var(--sage-deep)}
+
+/* ------------------------------------------------------------ inhoud */
+.adm-main{padding:34px clamp(20px,3.5vw,48px) 90px;max-width:920px}
+.adm-head{margin-bottom:30px}
+.adm-head h1{font-size:clamp(1.7rem,3vw,2.2rem);margin-bottom:.4rem}
+.adm-head p{margin:0;color:var(--olive);font-size:.95rem}
+.adm-head .adm-view{font-size:.9rem}
+
+.adm-card{
+  background:rgba(255,253,249,.85);
+  border:1px solid rgba(111,127,101,.16);
+  border-radius:var(--radius-m);
+  padding:clamp(20px,2.4vw,28px);
+  margin-bottom:18px;
+}
+.adm-card > h2{
+  font-size:1.05rem;font-family:var(--body);font-weight:600;color:var(--ink);
+  margin:0 0 18px;padding-bottom:12px;border-bottom:1px solid rgba(111,127,101,.14);
+}
+
+/* dashboardtegels */
+.adm-tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.adm-tile{
+  display:block;text-decoration:none;color:inherit;
+  background:rgba(255,253,249,.85);border:1px solid rgba(111,127,101,.16);
+  border-radius:var(--radius-m);padding:20px;
+  transition:border-color .25s,transform .25s;
+}
+.adm-tile:hover{border-color:var(--sage);transform:translateY(-2px)}
+.adm-tile strong{display:block;font-family:var(--display);font-size:1.15rem;color:var(--ink);font-weight:400;margin-bottom:.25rem}
+.adm-tile span{font-size:.88rem;color:var(--olive)}
+
+/* --------------------------------------------------------- formulier */
+.adm-field{display:grid;gap:.4rem;margin-bottom:18px}
+.adm-field:last-child{margin-bottom:0}
+.adm-field label{font-size:.9rem;font-weight:600;color:var(--ink)}
+.adm-field .hint{font-size:.83rem;color:var(--olive)}
+.adm-field input[type=text],
+.adm-field input[type=email],
+.adm-field input[type=url],
+.adm-field textarea,
+.adm-field select{
+  font-family:var(--body);font-size:.97rem;color:var(--ink);width:100%;
+  background:#FFFDF9;border:1.5px solid rgba(111,127,101,.28);
+  border-radius:12px;padding:.62em .8em;
+}
+.adm-field textarea{min-height:7rem;resize:vertical;line-height:1.6}
+.adm-field textarea.groot{min-height:16rem}
+.adm-field input:focus,.adm-field textarea:focus,.adm-field select:focus{
+  border-color:var(--sage);outline:2px solid rgba(159,183,156,.35);outline-offset:0;
+}
+.adm-teller{font-size:.8rem;color:var(--olive)}
+.adm-teller.te-lang{color:#9A5B4C}
+
+/* herhaalde blokken */
+.adm-rij{
+  border:1px solid rgba(111,127,101,.16);border-radius:14px;
+  padding:16px;margin-bottom:12px;background:rgba(251,248,243,.6);
+}
+.adm-rij-kop{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;
+  color:var(--olive);margin-bottom:12px;
+}
+.adm-grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+
+/* opmaakknoppen boven een tekstvak */
+.adm-toolbar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
+.adm-toolbar button{
+  font-family:var(--body);font-size:.85rem;font-weight:600;color:var(--ink-soft);
+  background:#FFFDF9;border:1.5px solid rgba(111,127,101,.24);
+  border-radius:9px;padding:.32em .7em;cursor:pointer;min-width:34px;
+}
+.adm-toolbar button:hover{border-color:var(--sage);color:var(--ink)}
+.adm-toolbar .scheiding{width:1px;background:rgba(111,127,101,.2);margin:2px 4px}
+
+/* opslagbalk */
+.adm-bar{
+  position:sticky;bottom:0;margin-top:24px;
+  background:rgba(251,248,243,.94);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  border-top:1px solid rgba(111,127,101,.16);
+  padding:14px 0;display:flex;align-items:center;gap:14px;
+}
+.adm-knop{
+  font-family:var(--body);font-size:.97rem;font-weight:600;
+  background:var(--sage-deep);color:var(--cream);border:1.5px solid transparent;
+  border-radius:999px;padding:.72em 1.5em;cursor:pointer;
+}
+.adm-knop:hover{background:#456049}
+.adm-knop[disabled]{opacity:.6;cursor:progress}
+.adm-knop.stil{background:transparent;color:var(--ink);border-color:rgba(111,127,101,.35)}
+.adm-knop.stil:hover{background:rgba(231,238,227,.7)}
+.adm-knop.klein{padding:.45em 1em;font-size:.88rem}
+.adm-melding{font-size:.9rem;color:var(--sage-deep)}
+.adm-melding.fout{color:#9A5B4C}
+
+/* concept-waarschuwing */
+.adm-let-op{
+  background:#F6E7DC;border-radius:14px;padding:14px 18px;
+  font-size:.9rem;color:var(--ink);margin-bottom:20px;
+}
+
+/* media */
+.adm-media{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.adm-media figure{margin:0;background:#FFFDF9;border:1px solid rgba(111,127,101,.16);border-radius:14px;overflow:hidden}
+.adm-media img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.adm-media figcaption{padding:8px 10px;font-size:.8rem;color:var(--olive);word-break:break-all}
+
+/* tabel FAQ */
+.adm-leeg{color:var(--olive);font-size:.92rem}
+
+/* inloggen */
+.adm-login{min-height:100vh;display:grid;place-items:center;padding:24px;background:var(--cream)}
+.adm-login .doos{width:100%;max-width:400px;background:rgba(255,253,249,.9);border:1px solid rgba(111,127,101,.16);border-radius:var(--radius-l);padding:34px}
+.adm-login h1{font-size:1.6rem;margin-bottom:.6rem}
+.adm-login p{font-size:.94rem;margin-bottom:1.4rem}
+.adm-login .adm-knop{width:100%}
+
+@media (max-width:840px){
+  .adm{grid-template-columns:1fr}
+  .adm-side{position:static;height:auto;flex-direction:column}
+  .adm-grid2{grid-template-columns:1fr}
+}
