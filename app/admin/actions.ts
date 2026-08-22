@@ -44,7 +44,7 @@ async function eisBeheerder() {
  * en instellingswijzigingen verversen we de hele site.
  */
 function ververs(paden: string[], tags: string[]) {
-  tags.forEach((t) => revalidateTag(t));
+  tags.forEach((t) => revalidateTag(t, 'max'));
   paden.forEach((p) => revalidatePath(p));
   revalidatePath('/sitemap.xml');
 }
