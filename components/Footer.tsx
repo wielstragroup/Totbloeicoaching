@@ -49,9 +49,19 @@ export default async function Footer() {
           </div>
         </div>
 
-        <div className="footer-bottom">
-          <p style={{ margin: 0 }}>© {new Date().getFullYear()} {settings.naam}</p>
-          <nav aria-label="Juridisch">
+<div className="footer-bottom">
+  <p style={{ margin: 0 }}>
+    © {new Date().getFullYear()} {settings.naam} · Website gemaakt door{' '}
+    <a
+      href="https://wielstragroup.nl"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Wielstra Group
+    </a>
+  </p>
+
+  <nav aria-label="Juridisch">
             <Link href="/privacy">Privacy</Link>
             <Link href="/algemene-voorwaarden">Algemene voorwaarden</Link>
             <Link href="/klachtenregeling">Klachtenregeling</Link>
